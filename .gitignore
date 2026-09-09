@@ -1,0 +1,49 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+# Ignore override files as they are usually used to override resources locally and so
+# are not checked in
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# Ignore log files
+*.log
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+
+# Ignore OS files
+.DS_Thumbs.db
+ehthumbs.vc
+Desktop.ini
+$RECYCLE.BIN/
+*.ks
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Docker
+# We don't want to ignore Dockerfiles or app.py, but we might want to ignore built images?
+# Actually, we don't build images manually, Terraform does, so we can ignore:
+# But let's not ignore anything in the docker/ directory as it's source code.
+# However, we might want to ignore any local Docker volumes or containers? Not needed.
+# Let's keep it simple and not ignore anything in docker/ for now.
+
+# But we should ignore any local Docker build cache if we were building locally, but we're not.
+# So no additional Docker ignores needed.

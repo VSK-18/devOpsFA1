@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FA1 Project</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .container { max-width: 600px; margin: 0 auto; }
+        h1 { color: #2c3e50; }
+        .info { background: #ecf0f1; padding: 20px; border-radius: 5px; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>FA1 - Git-Based Infrastructure as Code</h1>
+        <div class="info">
+            <p><strong>Frontend container is running</strong></p>
+            <p>Environment: <span id="environment">[Environment will be set by Terraform]</span></p>
+            <p>Backend API: <a href="http://localhost:5001" target="_blank">http://localhost:5001</a> (will vary by environment)</p>
+        </div>
+        <div class="info">
+            <h2>Assignment Details</h2>
+            <p>This frontend is served via Nginx and is part of a multi-environment deployment using Terraform and Docker.</p>
+            <p>The same Terraform code provisions QA, UAT, and PROD environments by using different variable files.</p>
+        </div>
+    </div>
+</body>
+</html>
