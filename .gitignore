@@ -47,3 +47,4 @@ __pycache__/
 
 # But we should ignore any local Docker build cache if we were building locally, but we're not.
 # So no additional Docker ignores needed.
+jenkins_home_backup.tar.gz
